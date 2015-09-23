@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript i jQuery</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    JavaScript i jQuery - Walidacja formularza
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <form method="GET" action="http://www.google.com" id="registerForm" novalidate>
+
+            <div class="form-group">
+                <label for="inputImie" class="col-sm-2 control-label">Imie i nazwisko</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputImie" placeholder="Imie i nazwisko" name="imie" value="Marcin Groszkiewicz">
+                </div>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="marcin@frontend.pl" name="email" value="marcin@wp.pl">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="plec" class="col-sm-2 control-label">Płeć</label>
+
+                <div class="col-sm-10">
+
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="plec" id="optionsRadios1" value="option1">
+                            Kobieta
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="plec" id="optionsRadios1" value="option1">
+                            Mężczyzna
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="zainteresowania" class="col-sm-2 control-label">Zainteresowania</label>
+
+                <div class="col-sm-10">
+                    
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="sport" name="zainteresowania">Sport
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="komputery" name="zainteresowania">Komputery
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="muzyka" name="zainteresowania">Muzyka
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="balety" name="zainteresowania">Balety
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="samochody" name="zainteresowania">Samochody
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="religia" name="zainteresowania">Religia
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="kraj" class="col-sm-2 control-label">Kraj</label>
+
+                <div class="col-sm-10">
+                    <select class="form-control" name="kraj">
+                        <option value="">-- wybierz --</option>
+                        <option value="PL">Polska</option>
+                        <option value="ND">Holandia</option>
+                        <option value="UK">Anglia</option>
+                        <option value="BG">Belgia</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="about" class="col-sm-2 control-label">O mnie</label>
+
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="about" name="about" rows="3" placeholder="Napisz o sobie"></textarea>
+                </div>
+            </div>
+
+
+            <hr>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="agree"> Zgadzam się z regulaminem serwisu</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-success">Zarejestruj</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
